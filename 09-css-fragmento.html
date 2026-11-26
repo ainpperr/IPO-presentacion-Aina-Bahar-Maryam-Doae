@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Fragmento de CSS - DAYLOG</title>
+    <meta name="description" content="Card 9 de 11 de la presentación de DAYLOG: Fragmento de CSS.">
+    <link rel="icon" href="images/favicon.png">
+    <link rel="stylesheet" href="styles/style.css">
+  </head>
+  <body>
+    <nav class="barra" aria-label="Navegación de la presentación">
+      <a class="anterior" href="08-figma-a-css.html">Anterior</a>
+      <span class="posicion">Card 9 de 11</span>
+      <a class="siguiente" href="10-dificultades.html">Siguiente</a>
+    </nav>
+    <main class="card tarjeta-cristal">
+      <h1>Fragmento de CSS</h1>
+      <div class="contenido codigo">
+        <ul class="puntos">
+          <li><strong>Elemento:</strong> la tarjeta de cristal de DAYLOG</li>
+          <li><strong>Selector:</strong> una clase, <code>.tarjeta-cristal</code>, reutilizable</li>
+          <li><strong>Se aplica a:</strong> el <code>&lt;div&gt;</code> que envuelve el campo de motivo</li>
+          <li><code>backdrop-filter</code> desenfoca el fondo y crea el efecto cristal</li>
+          <li><code>border-radius</code> y <code>box-shadow</code> copian las esquinas y la sombra de Figma</li>
+        </ul>
+        <div class="visual">
+          <pre><code>.tarjeta-cristal {
+  background: rgba(255, 255, 255, 0.82);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.9);
+  border-radius: 40px;
+  padding: 1rem 2rem;
+  box-shadow: 0 8px 24px rgba(43, 34, 51, 0.18);
+}</code></pre>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
